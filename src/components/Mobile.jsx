@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import Footer from "../childComponents/Footer"
-import Header from "../childComponents/Header"
-import FocusContent from "../childComponents/FocusContent"
+import Footer from "../commonComponents/Footer"
+import Header from "../commonComponents/Header"
+import FocusContent from "../commonComponents/FocusContent"
+import Form from '../commonComponents/Form'
 
 
 export default class Mobile extends Component {
@@ -54,7 +55,7 @@ export default class Mobile extends Component {
                             <div className="row align-items-center">
                                 <div className="col-lg-5">
                                     <figure className="text-center main-fig mt-5" data-aos="fade-right" data-aos-duration={300}>
-                                        <img className="img-fluid" src="img/android-dev.png" alt />
+                                        <img className="img-fluid" src="img/android-dev.png" alt="" />
                                     </figure>
                                 </div>
                                 <div className="col-lg-7">
@@ -62,7 +63,7 @@ export default class Mobile extends Component {
                                         <div className="col-md-6">
                                             <div className="txt-img-grp">
                                                 <figure className="mb-0">
-                                                    <img src="img/kotlin-img.png" alt />
+                                                    <img src="img/kotlin-img.png" alt="" />
                                                 </figure>
                                                 <h4>
                                                     Kotlin
@@ -72,7 +73,7 @@ export default class Mobile extends Component {
                                         <div className="col-md-6">
                                             <div className="txt-img-grp">
                                                 <figure className="mb-0">
-                                                    <img src="img/java-img.png" alt />
+                                                    <img src="img/java-img.png" alt="" />
                                                 </figure>
                                                 <h4>
                                                     Kotlin
@@ -94,7 +95,7 @@ export default class Mobile extends Component {
                             <div className="row align-items-center flex-row-reverse">
                                 <div className="col-lg-5">
                                     <figure className="text-center main-fig mb-0" data-aos="fade-left" data-aos-duration={300}>
-                                        <img className="img-fluid" src="img/ios-deve.png" alt />
+                                        <img className="img-fluid" src="img/ios-deve.png" alt="" />
                                     </figure>
                                 </div>
                                 <div className="col-lg-7">
@@ -102,7 +103,7 @@ export default class Mobile extends Component {
                                         <div className="col-md-5">
                                             <div className="txt-img-grp justify-content-end">
                                                 <figure className="mb-0">
-                                                    <img src="img/swift.png" alt />
+                                                    <img src="img/swift.png" alt="" />
                                                 </figure>
                                                 <h4>
                                                     SWIFT
@@ -112,7 +113,7 @@ export default class Mobile extends Component {
                                         <div className="col-md-7">
                                             <div className="txt-img-grp justify-content-end">
                                                 <figure className="mb-0">
-                                                    <img src="img/object-c.png" alt />
+                                                    <img src="img/object-c.png" alt="" />
                                                 </figure>
                                                 <h4>
                                                     OBJECTIVE C
@@ -131,6 +132,7 @@ export default class Mobile extends Component {
                         </div>
                     </section>
                     <section className="section white-section contact-form-center section-padding-top section-padding-bottom">
+                      
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-10 mx-auto">
@@ -138,40 +140,11 @@ export default class Mobile extends Component {
                                         <h2 className="mb-5">Got an idea for your own app? Share with us!</h2>
                                         <p className="p16 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has been the industry's standard.</p>
                                     </div>
-                                    <form>
-                                        <div className="row">
-                                            <div className="col-sm-6">
-                                                <div className="form-group">
-                                                    <input className="form-control" type="text" name placeholder="Name" />
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6">
-                                                <div className="form-group">
-                                                    <input className="form-control" type="text" name placeholder="Email" />
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6">
-                                                <div className="form-group">
-                                                    <input className="form-control" type="text" name placeholder="Phone Number" />
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6">
-                                                <select className="selectpicker">
-                                                    <option>What is app about?</option>
-                                                    <option>What is app about?</option>
-                                                    <option>What is app about?</option>
-                                                </select>
-                                            </div>
-                                            <div className="col-12">
-                                                <div className="btn-blk text-center">
-                                                    <button className="btn btn-primary btn-lg">Submit</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                   <Form/>
                                 </div>
                             </div>
                         </div>
+                    
                     </section>
                    <FocusContent/>
                 </div>

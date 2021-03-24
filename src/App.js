@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Link, Route, BrowserRouter, Switch } from 'react-router-dom'
-import Index from "./components/Index"
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
+import Index from "./components/Home"
 import DataCenter from "./components/DataCenter"
 import Development from "./components/Development"
 import HowWeDoit from "./components/HowWeDoit"
@@ -26,7 +26,7 @@ export default class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Index} />
+          <Route path="/" exact render={()=><Index/>} />
           <Route path="/development" exact component={Development} />
           <Route path="/datacenter" exact component={DataCenter} />
           <Route path="/howWeDoit" exact component={HowWeDoit} />

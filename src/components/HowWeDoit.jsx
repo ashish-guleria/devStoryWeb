@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Footer from "../childComponents/Footer"
-import Header from "../childComponents/Header"
-import FocusContent from "../childComponents/FocusContent"
+import Footer from "../commonComponents/Footer"
+import Header from "../commonComponents/Header"
+import FocusContent from "../commonComponents/FocusContent"
 
 export default class HowWeDoit extends Component {
     render() {

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import Footer from "../childComponents/Footer"
-import Header from "../childComponents/Header"
-import FocusContent from "../childComponents/FocusContent"
+import Footer from "../commonComponents/Footer"
+import Header from "../commonComponents/Header"
+import FocusContent from "../commonComponents/FocusContent"
+import Form from '../commonComponents/Form'
 
 
 export default class Seo extends Component {
@@ -85,7 +86,9 @@ export default class Seo extends Component {
                             <div className="clearfix" />
                         </div>
                     </section>
+                    
                     <section className="section white-section contact-form-center section-padding-top section-padding-bottom">
+                        
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-10 mx-auto">
@@ -93,40 +96,11 @@ export default class Seo extends Component {
                                         <h2 className="mb-5">Got an idea for your own app? Share with us!</h2>
                                         <p className="p16 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has been the industry's standard.</p>
                                     </div>
-                                    <form>
-                                        <div className="row">
-                                            <div className="col-sm-6">
-                                                <div className="form-group">
-                                                    <input className="form-control" type="text" name placeholder="Name" />
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6">
-                                                <div className="form-group">
-                                                    <input className="form-control" type="text" name placeholder="Email" />
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6">
-                                                <div className="form-group">
-                                                    <input className="form-control" type="text" name placeholder="Phone Number" />
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6">
-                                                <select className="selectpicker">
-                                                    <option>What is app about?</option>
-                                                    <option>What is app about?</option>
-                                                    <option>What is app about?</option>
-                                                </select>
-                                            </div>
-                                            <div className="col-12">
-                                                <div className="btn-blk text-center">
-                                                    <button className="btn btn-primary btn-lg">Submit</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                  <Form/>
                                 </div>
                             </div>
                         </div>
+                    
                     </section>
                     <FocusContent/>
                 </div>

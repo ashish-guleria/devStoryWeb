@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Footer extends Component {
     render() {
@@ -9,16 +10,18 @@ export default class Footer extends Component {
                         <div className="row">
                             <div className="col-md-4 col-lg-3">
                                 <div className="logo-footer">
-                                    <a href="index.html">
+                                    <Link to="/">
 
                                         <img src='./img/logo-footer.png' alt="img" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="social-media">
                                     <ul>
-                                        <li> <a className="fa fa-facebook" aria-hidden="true" href="/hello"></a> </li>
-                                        <li> <a className="fa fa-twitter" aria-hidden="true" href="hello"></a> </li>
-                                        <li> <a className="fa fa-instagram" aria-hidden="true" href="hello"></a> </li>
+
+                                        <li> <Link className="fa fa-facebook" aria-hidden="true" to="/"> </Link> </li>
+                                        <li> <Link className="fa fa-twitter" aria-hidden="true" to="/"> </Link> </li>
+                                        <li> <Link className="fa fa-instagram" aria-hidden="true" to="/"> </Link> </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -30,23 +33,25 @@ export default class Footer extends Component {
                                     <p className="p14-dark-2">Arth Prakash Building, Sector - 29D,<br />/ Chandigarh 160029</p>
                                 </div>
                             </div>
+
                             <div className="col-md-4 col-lg-5">
                                 <h5 className="footer-heading">Links</h5>
                                 <div className="footer-links">
                                     <ul>
-                                        <li> <a href="hello">Services</a> </li>
-                                        <li> <a href="hello">Live Support</a> </li>
+                                        <li> <Link to="/dataCenter">Services</Link> </li>
+                                        <li> <Link to="/development">Live Support</Link> </li>
                                     </ul>
                                     <ul>
-                                        <li> <a href="hello">Blog</a> </li>
-                                        <li> <a href="hello">How we do it</a> </li>
+                                        <li> <Link to="/ui_ux">Blog</Link> </li>
+                                        <li> <Link to="/howWeDoit">How we do it</Link> </li>
                                     </ul>
                                     <ul>
-                                        <li> <a href="hello">Support</a> </li>
-                                        <li> <a href="hello">Get Free Quote</a> </li>
+                                        <li> <Link to="/development">Support</Link> </li>
+                                        <li> <Link to="/quote">Get Free Quote</Link> </li>
                                     </ul>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </footer>

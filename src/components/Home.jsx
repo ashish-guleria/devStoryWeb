@@ -1,20 +1,12 @@
 import React, { Component } from 'react'
 
 
-import '../css/aos.css'
-import '../css/bootstrap-select.min.css'
-import '../css/bootstrap.min.css'
-import '../css/font-awesome.min.css'
-import '../css/slick.css'
-import '../css/style.css'
-import Footer from "../childComponents/Footer"
-import Header from "../childComponents/Header"
-import FocusContent from "../childComponents/FocusContent"
 
+import Footer from "../commonComponents/Footer"
+import Header from "../commonComponents/Header"
+import FocusContent from "../commonComponents/FocusContent"
 
-export default class Index extends Component {
-
-    
+export default class Home extends Component {
 
     render() {
         return (

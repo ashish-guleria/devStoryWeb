@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from "../childComponents/Header"
+import Header from "../commonComponents/Header"
 
 
 export default class Quotes extends Component {
@@ -7,7 +7,7 @@ export default class Quotes extends Component {
         return (
             <div>
 
-               <Header/>
+                <Header />
                 <div id="wrapper">
                     <section className="platform platform1" id="section1">
                         <div className="platform-child">
@@ -829,8 +829,10 @@ export default class Quotes extends Component {
                     </section>
                     {/*platform section end here  */}
                     {/*platform section two start here  */}
+
+
                     <section className="platform platform8" id="section8" style={{ display: 'none' }}>
-                        <form id="contact-form" className="form" action="https://www.aativa.com/get-quotes" method="POST" role="form">
+                        <form id="contact-form" className="form" action="https://www.aativa.com/get-quotes" method="POST" >
                             <input type="hidden" name="_token" defaultValue="kg29jDTkVfxVSZRsmN1Onm2hUyW9872AOf8qfDcf" />
                             <input type="hidden" name="random" defaultValue="EDvQr2IXHt" />
                             <div className="platform-child7">
@@ -918,6 +920,8 @@ export default class Quotes extends Component {
                                 </div></section>
                         </form>
                     </section>
+                
+
                 </div>
 
             </div>

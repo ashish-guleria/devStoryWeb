@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Header extends Component {
     render() {
@@ -7,23 +8,25 @@ export default class Header extends Component {
                  <header>
                     <div className="container">
                         <nav className="navbar navbar-expand-md navbar-dark p-0">
-                            <a className="navbar-brand" href="index.html" >
+                            <Link className="navbar-brand" to="/" >
                                 <img className="logo" src="./img/logo.png" alt="img" />
-                            </a>
+                            </Link>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
                             <div className="collapse navbar-collapse justify-content-end" id="nav">
                                 <ul className="navbar-nav">
+
                                     <li className="nav-item">
-                                        <a className="nav-link active" href="hello">Our Work</a>
+                                        <Link className="nav-link active" to="/development">Our Work</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="hello">How we do it</a>
+                                        <Link className="nav-link" to="/howWeDoit">How we do it</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="hello">Services</a>
+                                        <Link className="nav-link" to="/webDesign">Services</Link>
                                     </li>
+                                    
                                 </ul>
                             </div>
                         </nav>
