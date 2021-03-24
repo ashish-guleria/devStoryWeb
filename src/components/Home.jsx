@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import Footer from "../commonComponents/Footer"
 import Header from "../commonComponents/Header"
 import FocusContent from "../commonComponents/FocusContent"
+import { Link } from 'react-router-dom'
 
 export default class Home extends Component {
 
@@ -50,9 +51,9 @@ export default class Home extends Component {
                                             <div className="col-md-7">
                                                 <p className="p16-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                                                 <div className="getfree-qot-blk marginT34">
-                                                    <a className="btn-dark btn float-left" href="hello">GET FREE QUOTE</a>
-                                                    <a className="user-icon notification" href="hello">
-                                                    </a>
+                                                    <Link className="btn-dark btn float-left" to="/quote">GET FREE QUOTE</Link>
+                                                    <Link className="user-icon notification" to="seo">
+                                                    </Link>
                                                 </div>
                                             </div>
                                             <div className="col-md-5">
@@ -287,7 +288,7 @@ export default class Home extends Component {
                                             <li>Deployment</li>
                                         </ul>
                                         <div className="mt-5 mr-4 text-right btn-blk">
-                                            <a className="learn-more-btn" href="hello" tabindex="0">Get Estimation</a>
+                                            <a className="learn-more-btn" href="/quote" tabindex="0">Get Estimation</a>
                                         </div>
                                     </div>
                                 </div>
