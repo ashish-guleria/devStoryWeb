@@ -16,27 +16,22 @@ import "aos/dist/aos.css";
 
 export default class App extends Component {
   componentDidMount() {
-    // or simply just AOS.init();
-    AOS.init({
-        // initialise with other settings
-       // duration: 20000
-    });
-}
+    AOS.init({});
+  }
   render() {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact render={()=><Index/>} />
-          <Route path="/development" exact component={Development} />
-          <Route path="/datacenter" exact component={DataCenter} />
-          <Route path="/howWeDoit" exact component={HowWeDoit} />
-          <Route path="/mobile" exact component={Mobile} />
-          <Route path="/quote" exact component={Quote} />
-          <Route path="/seo" exact component={Seo} />
-          <Route path="/ui_ux" exact component={Ui_ux} />
-          <Route path="/webDesign" exact component={WebDesign} />
+          <Route path="/" exact render={() => <Index />} />
+          <Route path="/development" component={Development} />
+          <Route path="/datacenter" component={DataCenter} />
+          <Route path="/howWeDoit" component={HowWeDoit} />
+          <Route path="/mobile" component={Mobile} />
+          <Route path="/quote" component={Quote} />
+          <Route path="/seo" component={Seo} />
+          <Route path="/ui_ux" component={Ui_ux} />
+          <Route path="/webDesign" component={WebDesign} />
         </Switch>
-
       </BrowserRouter>
     )
   }
