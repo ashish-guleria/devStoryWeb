@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default class Header extends Component {
     render() {
@@ -18,13 +18,13 @@ export default class Header extends Component {
                                 <ul className="navbar-nav">
 
                                     <li className="nav-item">
-                                        <Link className="nav-link active" to="/development">Our Work</Link>
+                                        <NavLink exact className="nav-link " to="/development">Our Work</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/howWeDoit">How we do it</Link>
+                                        <NavLink exact className="nav-link " to="/howWeDoit">How we do it</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/webDesign">Services</Link>
+                                        <NavLink exact className="nav-link " to="/webDesign">Services</NavLink>
                                     </li>
                                     
                                 </ul>
