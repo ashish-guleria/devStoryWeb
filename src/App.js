@@ -11,6 +11,7 @@ import Ui_ux from "./components/Ui_ux"
 import WebDesign from "./components/WebDesign"
 import AOS from "aos";
 import "aos/dist/aos.css";
+//import test from './components/test'
 
 
 
@@ -31,6 +32,8 @@ export default class App extends Component {
           <Route path="/seo" component={Seo} />
           <Route path="/ui_ux" component={Ui_ux} />
           <Route path="/webDesign" component={WebDesign} />
+          <Route component={Index}/>
+          {/* <Route path="/test" component={test}/> */}
         </Switch>
       </BrowserRouter>
     )
